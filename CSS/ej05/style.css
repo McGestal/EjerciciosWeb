@@ -1,0 +1,54 @@
+main {
+    margin: 10px;
+    width: 60%;
+    display: flex;
+}
+
+div{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+span {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Se añade más 1 en el parámetro por culpa de elemento span */
+main>div:nth-child(5n+2){
+    background-color: red;
+}
+main>div:nth-child(5n+3){
+    background-color: blue;
+}
+main>div:nth-child(5n+4){
+    background-color: green;
+}
+main>div:nth-child(5n+5){
+    background-color: yellow;
+}
+main>div:nth-child(5n+6){
+    background-color: orange;
+}
+
+#primera {
+    background-color: lightblue;
+    justify-content: flex-start;
+}
+
+#segunda {
+    background-color: lightgreen;
+    justify-content: flex-end;
+}
+
+#tercera {
+    background-color: lightcoral;
+    justify-content: space-between;
+}
+
+#cuarta {
+    background-color: lightyellow;
+    flex-direction: row-reverse;
+}
