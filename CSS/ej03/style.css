@@ -1,8 +1,8 @@
 main {
     margin: 10px;
-    width: 50%;
+    width: 60%;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(6, auto);
 }
 
 div{
@@ -11,23 +11,30 @@ div{
     cursor: pointer;
 }
 
-main>div:nth-child(5n+1){
+span {
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+}
+
+/* Se añade más 1 en el parámetro por culpa de elemento span */
+main>div:nth-child(5n+2){
     background-color: red;
     border: 3px solid orange;
 }
-main>div:nth-child(5n+2){
+main>div:nth-child(5n+3){
     background-color: blue;
     border: 3px dotted red;
 }
-main>div:nth-child(5n+3){
+main>div:nth-child(5n+4){
     background-color: green;
     border: 3px dashed blue;
 }
-main>div:nth-child(5n+4){
+main>div:nth-child(5n+5){
     background-color: yellow;
     border: 3px double green;
 }
-main>div:nth-child(5n+5){
+main>div:nth-child(5n+6){
     background-color: orange;
     border: 3px yellow;
     border-style: solid dotted dashed double;
