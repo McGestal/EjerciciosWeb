@@ -1,0 +1,36 @@
+.cuadrado {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer; /* Cambia el puntero al pasar el ratón */
+}
+
+/* Estilos para la primera fila (en línea) */
+#rectangular div {
+    display: inline-block;
+}
+
+/* Estilos para la segunda fila (bordes rectangulares) */
+#redondeado div {
+    display: inline-block;
+    border-radius: 20%;
+}
+
+/* Estilos para la tercera fila (bordes redondos) */
+#redondo div {
+    display: inline-block;
+    border-radius: 100%;
+}
+
+/* Estilos de color de fondo */
+#rectangular {
+    background-color: lightblue;
+}
+
+#redondeado {
+    background-color: lightgreen;
+}
+
+#redondo {
+    background-color: lightcoral;
+}
