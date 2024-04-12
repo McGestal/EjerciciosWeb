@@ -1,0 +1,72 @@
+main {
+    margin: 10px;
+    min-width: 60%;
+    height: 80px;
+    display: grid;
+    place-content: space-around;
+    grid-template-columns: repeat(6, auto);
+}
+
+div{
+    min-width: 50px;
+    min-height: 50px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+div:hover {
+    transform: rotate(0deg);
+}
+
+span {
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+}
+
+/* Se añade más 1 en el parámetro por culpa de elemento span */
+main>div:nth-child(5n+2){
+    background-color: red;
+    border: 3px solid orange;
+}
+main>div:nth-child(5n+3){
+    background-color: blue;
+    border: 3px dotted red;
+}
+main>div:nth-child(5n+4){
+    background-color: green;
+    border: 3px dashed blue;
+}
+main>div:nth-child(5n+5){
+    background-color: yellow;
+    border: 3px double green;
+}
+main>div:nth-child(5n+6){
+    background-color: orange;
+    border: 3px yellow;
+    border-style: solid dotted dashed double;
+}
+
+#primera {
+    background-color: lightblue;
+}
+
+#segunda {
+    background-color: lightgreen;
+}
+
+#tercera {
+    background-color: lightcoral;
+}
+
+#primera div {
+
+}
+
+#segunda div {
+    border-radius: 20%;
+}
+
+#tercera div {
+    border-radius: 100%;
+}
